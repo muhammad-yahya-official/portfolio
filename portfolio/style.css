@@ -150,7 +150,7 @@ section {
 
 /* ---- SECTIONS ---- */
 #section2 {
-      background-image: url(/portfolio/images/20251128_0312_image.png);
+      background-image: url(./images/20251128_0312_image.png);
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -160,7 +160,7 @@ section {
 
 /* ⭐ FIXED: REMOVE gradient so Vanta background shows */
 #section3 {
-     background-image: url(/portfolio/images/nano_banana_removed.png);
+     background-image: url(./images/nano_banana_removed.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
