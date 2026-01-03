@@ -1,6 +1,6 @@
 
 body{
-    background-image: url(/assets/image/OIP\ \(4\).webp);
+    background-image: url(../project-image/OIP\ \(4\).webp);
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
@@ -20,7 +20,7 @@ body{
 }
 
 .main>.image{
-    background-image: url(/assets/image/OIP\ \(2\).webp);
+    background-image: url(../project-image/OIP\ \(2\).webp);
     width: 380px;
     height: 260px;
     border: none;
