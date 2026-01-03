@@ -1,0 +1,136 @@
+body{
+   
+  
+    display: flex; 
+    background-color: #a1a1a1; 
+    margin: 12px 0px 0px 8px;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    
+}
+.main{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.container{
+  background-color: white;
+  box-shadow: 4px 8px 4px grey;
+  width:500px;
+  height: 400px;
+ 
+  border-radius:8px ;
+  
+
+}
+
+.btn>button{
+background-color: rgb(99, 97, 102);
+font-family: Arial, Helvetica, sans-serif;
+box-shadow: 3px 3px 3px grey;
+padding: 4px ;
+cursor: pointer;
+border-radius: 20px;
+margin-left: 220px;
+width: 70px;
+
+
+
+}
+
+
+/* From Uiverse.io by alexruix */ 
+.input {
+  max-width: 190px;
+  height: 44px;
+  background-color: #05060f0a;
+  border-radius: .5rem;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  margin-left: 140px;
+  transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.label {
+  display: block;
+  margin-bottom: .3rem;
+  font-size: .9rem;
+  margin-left: 4px;
+  text-align: center;
+  font-weight: bold;
+  color: #05060f99;
+  transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.input:hover, .input:focus, .input-group:hover .input {
+  outline: none;
+  border-color: #05060f;
+}
+
+.input-group:hover .label, .input:focus {
+  color: #05060fc2;
+}
+
+/* From Uiverse.io by alexruix */ 
+.input {
+  max-width: 190px;
+  height: 44px;
+  background-color: #05060f0a;
+  border-radius: .5rem;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.label3 {
+  display: block;
+  margin-bottom: .3rem;
+  font-size: .9rem;
+  font-weight: bold;
+   margin-left: 4px;
+   text-align: center;
+  color: #05060f99;
+  transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.input:hover, .input:focus, .input2-group:hover .input {
+  outline: none;
+  border-color: #05060f;
+}
+
+.input2-group:hover .label3, .input:focus {
+  color: #05060fc2;
+}
+
+.input {
+  max-width: 190px;
+  height: 44px;
+  background-color: #05060f0a;
+  border-radius: .5rem;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.label2 {
+  display: block;
+  margin-bottom: .3rem;
+  font-size: .9rem;
+  font-weight: bold;
+  color: #05060f99;
+   margin-left: 4px;
+   text-align: center;
+  transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.input:hover, .input:focus, .input1-group:hover .input {
+  outline: none;
+  border-color: #05060f;
+}
+
+.input1-group:hover .label2, .input:focus {
+  color: #05060fc2;
+}

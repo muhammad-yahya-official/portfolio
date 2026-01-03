@@ -1,0 +1,131 @@
+body{
+    background-color: black;
+    background-image: url(/assets/image/Gemini_Generated_Image_yhzk20yhzk20yhzk.png);
+    background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  font-family: Arial, Helvetica, sans-serif;
+  height: 95vh;
+}
+nav{
+    border-radius: 50px;
+    margin: 12px auto;
+    width: 1500px;
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 390px;
+}
+.text{
+    margin-left: 20px;
+}
+ul{
+    list-style: none;
+    color: white;
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.data{
+  background-color: rgba(26, 10, 11, 0.40);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    width: 338px;
+    height: 40px;
+  border-radius: 50px;
+  padding-right: 35px;
+}
+ .btn1 button{
+    background-color: rgba(26, 10, 11, 0.40);
+    
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  width: 150px;
+  height:40px;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255,0.08)
+ }
+ .blu{
+   background-color: rgba(65, 63, 63, 0.4);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+    color: white;
+   width: 210px;
+    height: 30px;
+    border-radius: 50px;
+        margin-left: 220px;
+ }
+.blu h5{
+    font-weight: lighter;
+    padding: 7px 0px 0px 0px; 
+    text-align: center;
+}
+ .lower p{
+    color: white;
+ }
+ .center{
+ margin: 100px 0px 0px 430px;
+ }
+ .lower11{
+    margin-top: -35px;
+    padding-left: 100px ; 
+ }
+ .lower1, .lower11{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+ .lower22{
+    margin: -10px;
+    padding-left: 260px;
+ }
+ .lowest,.lowesr{
+    display: flex;
+    color: white;
+ }
+ .lowest{
+    gap: 111px;
+    margin-left: 60px;
+ }
+ .lowesr{
+    gap:60px;
+    margin-left: 30px;
+ }
+ .lowesr h4{
+    margin-top: -25px;
+ }
+ .footer{
+    margin: 80px 0px 0px 150px;
+ }
+ .line{
+    width: 390px;
+    margin: -10px 0px 0px 0px;
+ }
+ .btn2{
+    color: white;
+    background-color:#BA4801;
+    border: none;
+    border-radius: 50px;
+    width: 200px;
+    height: 40px;
+    margin:35px 0px 0px 240px;
+ }
+ @keyframes moveDiagonal {
+  0% {
+    transform: rotate(330deg) translate(0, 0);
+  }
+  100% {
+    transform: rotate(330deg) translate(6px, -1px);
+  }
+}
+.btn1:hover i,.btn2:hover i {
+  animation: moveDiagonal 1s infinite;
+}

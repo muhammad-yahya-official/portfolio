@@ -1,0 +1,181 @@
+
+body{
+    background-image: url(/assets/image/OIP\ \(4\).webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    height: 95vh;
+    place-items: center;
+    
+     
+}
+
+
+.main{
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    width: 400px;
+    height: 600px;
+    position: relative;
+}
+
+.main>.image{
+    background-image: url(/assets/image/OIP\ \(2\).webp);
+    width: 380px;
+    height: 260px;
+    border: none;
+    object-fit: cover;
+    border-radius: 15px;
+
+    
+    position: relative;
+    top:10px;
+    left: 10px;
+
+
+}
+
+.bottom{
+    border-radius: 20px;
+    width: 393px;
+    height: 65px;
+    background-color: #F6F6F6;
+    display: flex;
+    margin-left: 3px;
+    
+    
+}
+.lower{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 5px;
+}
+.lower h3{
+    margin-left: 193px;
+    margin-top: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.lower p{
+    margin-left: 0px;
+    margin-top: 30px;
+    color: grey;
+    
+}
+.lower h2{
+    padding-top: 4px;
+}
+.lower label{
+    
+    margin:27px 0px 0px 3px;
+    padding: 0px 0px 0px 1px;
+    font-size: large;
+    color: grey;
+}
+.bottom label{
+    font-weight: 500;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 17px;
+    margin-left: 8px;
+
+}
+
+.num{
+    margin-left: -89px;
+    margin-top: 25px;
+    color: grey;
+    font-size:small;
+
+}
+.fa-sharp-duotone {
+    margin-top: 25px;
+    margin-left: 200px;
+    border-radius: 50px;
+}
+.person img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.thing{
+    display: flex;
+    gap: 10px;
+    
+    
+}
+   
+
+.data{
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    
+}
+.data h3{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.data p{
+    color: #8C8C8C;
+}
+.image img{
+    position: relative;
+    left:10px;
+    bottom: 7px;
+}
+.image-icons{
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    
+  
+    
+
+}
+.right{
+    position: absolute;
+     bottom: 15px;
+
+     right: 10px;
+       display: flex;
+       gap: 8px;
+}
+
+.btn{
+    background-color: #E0E8FA;
+    border-radius: 50px;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: none;
+    cursor: pointer;
+    border: none;
+   
+}
+
+.bio,.map{
+    border-radius: 50px;
+    
+    border: none;
+    padding: 3px 9px 0px 9px;
+ 
+    background-color: #FFFFFF;
+    cursor: pointer;
+
+}
+.icon{
+    margin-top: 8px;
+    margin-right: 5px;
+}
+
+@media (width <=420px) and (width <=768px)
+{
+    body{
+        background-color: black;
+    }
+}
+
