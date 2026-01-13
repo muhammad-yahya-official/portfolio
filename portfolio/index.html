@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,6 +30,7 @@
         <li><a href="#section2">About</a></li>
         <li><a href="#section3">Skills</a></li>
         <li><a href="#section4">Projects</a></li>
+        <li><a href="#section5">Vibe Coding</a></li>
       </ul>
     </nav>
   </header>
@@ -40,6 +42,7 @@
     <a href="#section2" data-label="About"></a>
     <a href="#section3" data-label="Skills"></a>
     <a href="#section4" data-label="Projects"></a>
+    <a href="#section5" data-label="Vibe Coding"></a>
   </div>
   <section id="section1">
     <div class="section1-info">
@@ -201,10 +204,11 @@
           </a>
         </div>
         <div class="project-card">
-          <a href="./projects/assignment.html" target="_blank">
-            <img src="./images/Screenshot 2025-11-27 003627.png">
-            <div class="overlay"><span><i class="fa-solid fa-magnifying-glass-plus" style="color: #ffffff;"></i> Sign in
-                Page</span></div>
+          <a href="https://luxoracurtain.vercel.app/" target="_blank">
+            <img src="./images/Screenshot 2026-01-13 151302.png">
+            <div class="overlay"><span><i class="fa-solid fa-magnifying-glass-plus" style="color: #ffffff;"></i>
+                Informational Website
+              </span></div>
           </a>
         </div>
         <div class="project-card">
@@ -242,6 +246,42 @@
     </div>
 
   </section>
+
+  <section id="section5" class="vibe-coding">
+    <h1>Vibe Coding</h1>
+    <div class="projectss">
+      <div class="first">
+        <div class="project-card">
+          <!-- Placeholder or duplicate for now as user requested structure to upload projects later -->
+          <a href="#" target="_blank">
+            <img src="./images/Screenshot 2026-01-13 151639.png" alt="Project Preview">
+            <div class="overlay"><span><i class="fa-solid fa-code" style="color: #ffffff;"></i> Abu Dhabi Curtains
+                Elegant Web Design <br>
+                for a Home Furnishing Brand</span>
+            </div>
+          </a>
+        </div>
+        <!-- <div class="project-card">
+          <a href="#" target="_blank">
+            <img src="./images/Screenshot 2025-11-27 003627.png" alt="Project Preview">
+            <div class="overlay"><span><i class="fa-solid fa-code" style="color: #ffffff;"></i> AI Project 2</span>
+            </div>
+          </a>
+        </div>
+      </div> -->
+        <!-- <div class="second">
+        <div class="second22">
+          <div class="project-card">
+            <a href="#" target="_blank">
+              <img src="./images/Screenshot 2025-11-27 003312.png" alt="Project Preview">
+              <div class="overlay"><span><i class="fa-solid fa-code" style="color: #ffffff;"></i> AI Project 3</span>
+              </div>
+            </a>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
   <!-- <script>
         const sections = document.querySelectorAll("section");
         const navLinks = document.querySelectorAll(".side-nav a");
@@ -273,23 +313,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
 
-  <script>
-    VANTA.NET({
-      el: "#section4",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0x0077ff,
-      backgroundColor: 0x000000,
-      points: 10.00,
-      maxDistance: 22.00,
-      spacing: 18.00
-    })
-  </script>
+  <!-- Section 4 Vanta Removed for Vibe Coding Unification -->
+
   <!-- Section 1 -->
   <!-- VANTA WAVES -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
@@ -339,6 +364,29 @@
 
 
 
+  <script>
+    // Mobile Navigation Toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const sideMenuMobile = document.getElementById('sideMenuMobile');
+    const mobileLinks = document.querySelectorAll('.side-menu-mobile ul li a');
+
+    if (menuBtn && sideMenuMobile) {
+      menuBtn.addEventListener('click', () => {
+        menuBtn.classList.toggle('active');
+        sideMenuMobile.classList.toggle('active');
+      });
+
+      // Close menu when a link is clicked
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          menuBtn.classList.remove('active');
+          sideMenuMobile.classList.remove('active');
+        });
+      });
+    }
+  </script>
+
+  <script src="./js/vibe-coding.js"></script>
 </body>
 
 </html>

@@ -143,6 +143,21 @@ body {
     right: 18px;
 }
 
+/* Add background to label for readability */
+.side-nav a::after {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    z-index: 10000;
+    /* Ensure on top */
+}
+
+/* Hide side-nav on smaller screens to prevent collision */
+@media (max-width: 900px) {
+    .side-nav {
+        display: none;
+    }
+}
+
 /* .side-nav a.active {
     background: hsl(210, 100%, 60%);
     transform: scale(1.4);
@@ -774,6 +789,100 @@ border: 1px solid rgba(50, 39, 39, 0.25); */
     }
 }
 
+/* Section 5 - Vibe Coding */
+/* Section 5 - Vibe Coding */
+/* Section 5 - Vibe Coding */
+#section5 {
+    color: white;
+    min-height: 90vh;
+    /* Adjusted to 90vh as requested */
+    position: relative;
+    overflow: hidden;
+    padding-top: 40px;
+    /* Match standard section padding */
+}
+
+/* Ensure content is above background */
+#section5 .content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+/* Match Section 4 alignment */
+#section5 h1 {
+    text-align: center;
+    color: white;
+    /* Removed margin-top: 0 to match Section 4 */
+}
+
+.vibe-coding .projectss {
+    margin-top: 50px;
+    /* Match Section 4 */
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    /* Keep column stack for our 2-row layout */
+    align-items: center;
+}
+
+/* Specific overrides for Section 5 grid */
+#section5 .first {
+    justify-content: center;
+    padding: 0px 5px;
+    display: flex;
+    gap: 25px;
+}
+
+#section5 .second .second22 {
+    padding: 20px 0;
+    justify-content: center;
+    display: flex;
+    gap: 25px;
+}
+
+/* Responsive Rules for Section 5 */
+@media (max-width: 900px) {
+
+    #section5 .first,
+    #section5 .second .second22 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #section5 .project-card {
+        width: 90vw;
+        max-width: 450px;
+        height: auto;
+        aspect-ratio: 450/250;
+        /* Maintain aspect ratio */
+    }
+}
+
+#section5 p {
+    font-size: 24px;
+    font-family: "Inter", "Poppins", sans-serif;
+    opacity: 0.8;
+}
+
+/* UI/UX: Neon Glow Hover Effect for Vibe Coding Cards */
+#section5 .project-card,
+#section4 .project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#section5 .project-card:hover,
+#section4 .project-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 246, 255, 0.5), 0 0 40px rgba(0, 246, 255, 0.3);
+    border-color: rgba(0, 246, 255, 0.8);
+    z-index: 20;
+    /* Bring to front on hover */
+}
+
 
 
 /* ---------- (3) Extra-small phones (max-width: 480px) ---------- */
@@ -791,7 +900,7 @@ border: 1px solid rgba(50, 39, 39, 0.25); */
         margin-bottom: 20px;
     }
 
-   
+
 
     .social-links {
         margin-bottom: 12px !important;
