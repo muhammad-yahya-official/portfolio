@@ -82,6 +82,23 @@
     .side-menu-mobile ul li a:hover {
         color: #64ffda;
     }
+
+    /* Close Button at the top right inside the menu */
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .close-btn:hover {
+        color: #00B7C7;
+        transform: scale(1.1);
+    }
+
 }
 
 html {
@@ -980,11 +997,13 @@ border: 1px solid rgba(50, 39, 39, 0.25); */
     }
 
     #section4 .project-card {
-        width: 95% !important;
-        max-width: 350px;
-        height: 190px !important;
+        width: 90vw !important;
+        max-width: 450px;
+        height: auto !important;
+        aspect-ratio: 450/250;
         margin: 0 auto;
     }
+
 }
 
 /* ---- Small phones (max-width: 480px) ---- */

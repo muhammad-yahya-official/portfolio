@@ -25,6 +25,9 @@
     </div>
 
     <nav class="side-menu-mobile" id="sideMenuMobile">
+      <div class="close-btn" id="closeBtn">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
       <ul>
         <li><a href="#section1">Home</a></li>
         <li><a href="#section2">About</a></li>
@@ -368,6 +371,7 @@
     // Mobile Navigation Toggle
     const menuBtn = document.getElementById('menuBtn');
     const sideMenuMobile = document.getElementById('sideMenuMobile');
+    const closeBtn = document.getElementById('closeBtn'); // Get close button
     const mobileLinks = document.querySelectorAll('.side-menu-mobile ul li a');
 
     if (menuBtn && sideMenuMobile) {
@@ -375,6 +379,14 @@
         menuBtn.classList.toggle('active');
         sideMenuMobile.classList.toggle('active');
       });
+
+      // Close menu when close button is clicked
+      if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+          menuBtn.classList.remove('active');
+          sideMenuMobile.classList.remove('active');
+        });
+      }
 
       // Close menu when a link is clicked
       mobileLinks.forEach(link => {
