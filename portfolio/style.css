@@ -744,6 +744,13 @@ border: 1px solid rgba(50, 39, 39, 0.25); */
         width: 90% !important;
         text-align: center;
     }
+
+    /* Justify text for better readability on tablet */
+    .right span,
+    .left span {
+        text-align: justify;
+        display: block;
+    }
 }
 
 
@@ -803,6 +810,13 @@ border: 1px solid rgba(50, 39, 39, 0.25); */
     .right,
     .left {
         text-align: center;
+    }
+
+    /* Justify text for better readability on mobile */
+    .right span,
+    .left span {
+        text-align: justify;
+        display: block;
     }
 }
 
