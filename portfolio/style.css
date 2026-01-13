@@ -758,6 +758,10 @@ border: 1px solid rgba(50, 39, 39, 0.25); */
 /* ---------- (2) Mobile (max-width: 768px) ---------- */
 @media (max-width: 768px) {
 
+    /* Increase top padding to prevent collision with fixed hamburger menu */
+    section {
+        padding-top: 80px !important;
+    }
 
     /* Section 1 spacing + typography */
     .section1-info h1 {
