@@ -977,8 +977,8 @@ border: 1px solid rgba(50, 39, 39, 0.25); */
     }
 }
 
-/* ---- Mobile (max-width: 768px) ---- */
-@media (max-width: 768px) {
+/* ---- Mobile (max-width: 900px) - Matching Section 5 ---- */
+@media (max-width: 900px) {
 
     #section4 h1 {
         font-size: 32px;
@@ -988,10 +988,15 @@ border: 1px solid rgba(50, 39, 39, 0.25); */
         font-size: 16px;
     }
 
+    #section4 .projectss {
+        align-items: center;
+        /* Match Section 5 */
+    }
+
     #section4 .first,
     #section4 .second .second22 {
         flex-direction: column;
-        flex-wrap: nowrap;
+        align-items: center;
         gap: 20px;
         padding: 10px 5px !important;
     }
