@@ -1,11 +1,9 @@
-/* ---------------- MOBILE NAV ---------------- */
+/* ---------------- MOBILE NAV REDESIGN ---------------- */
 .mobile-nav {
     display: none;
 }
 
 @media (max-width: 768px) {
-
-    /* hide your desktop dots nav */
     .side-nav {
         display: none !important;
     }
@@ -13,92 +11,141 @@
     .mobile-nav {
         display: block;
         position: fixed;
-        top: 20px;
-        left: 20px;
-        z-index: 20000;
+        top: 25px;
+        right: 25px;
+        /* Moved to right for better thumb reach */
+        z-index: 40000;
     }
 
-    /* hamburger */
+    /* Modern Hamburger */
     .menu-btn {
-        width: 32px;
-        height: 25px;
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
         cursor: pointer;
+        transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .menu-btn span {
-        width: 100%;
-        height: 3px;
+        width: 20px;
+        height: 2px;
         background: #ffffff;
-        border-radius: 5px;
+        border-radius: 2px;
         transition: 0.4s ease;
     }
 
+    .menu-btn.active {
+        background: rgba(0, 183, 199, 0.2);
+        border-color: #00B7C7;
+    }
+
     .menu-btn.active span:nth-child(1) {
-        transform: translateY(11px) rotate(45deg);
+        transform: translateY(6px) rotate(45deg);
     }
 
     .menu-btn.active span:nth-child(2) {
         opacity: 0;
+        transform: translateX(10px);
     }
 
     .menu-btn.active span:nth-child(3) {
-        transform: translateY(-11px) rotate(-45deg);
+        transform: translateY(-6px) rotate(-45deg);
     }
 
-    /* slide menu */
+    /* Full-Screen Glass Overlay Menu */
     .side-menu-mobile {
         position: fixed;
         top: 0;
-        left: -260px;
-        width: 240px;
+        left: 0;
+        width: 100%;
         height: 100vh;
-        background: rgba(15, 15, 15, 0.96);
-        backdrop-filter: blur(10px);
-        padding-top: 120px;
-        transition: 0.4s ease;
-        z-index: 30000;
+        background: rgba(10, 10, 10, 0.85);
+        backdrop-filter: blur(25px) saturate(180%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 35000;
     }
 
     .side-menu-mobile.active {
-        left: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .side-menu-mobile ul {
+        text-align: center;
+        padding: 0;
     }
 
     .side-menu-mobile ul li {
         list-style: none;
-        margin-bottom: 20px;
+        margin: 15px 0;
+        transform: translateY(30px);
+        opacity: 0;
+        transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .side-menu-mobile.active ul li {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    /* Staggered animation for menu items */
+    .side-menu-mobile.active ul li:nth-child(1) {
+        transition-delay: 0.1s;
+    }
+
+    .side-menu-mobile.active ul li:nth-child(2) {
+        transition-delay: 0.2s;
+    }
+
+    .side-menu-mobile.active ul li:nth-child(3) {
+        transition-delay: 0.3s;
+    }
+
+    .side-menu-mobile.active ul li:nth-child(4) {
+        transition-delay: 0.4s;
+    }
+
+    .side-menu-mobile.active ul li:nth-child(5) {
+        transition-delay: 0.5s;
     }
 
     .side-menu-mobile ul li a {
         color: white;
         text-decoration: none;
-        font-size: 22px;
-        padding: 12px 30px;
-        display: block;
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding: 10px 20px;
+        display: inline-block;
+        transition: 0.3s;
+        text-transform: uppercase;
+        font-family: 'Playfair Display', serif;
     }
 
     .side-menu-mobile ul li a:hover {
-        color: #64ffda;
-    }
-
-    /* Close Button at the top right inside the menu */
-    .close-btn {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        font-size: 28px;
-        color: white;
-        cursor: pointer;
-        transition: 0.3s ease;
-    }
-
-    .close-btn:hover {
         color: #00B7C7;
         transform: scale(1.1);
+        text-shadow: 0 0 15px rgba(0, 183, 199, 0.5);
     }
 
+    .close-btn {
+        display: none;
+        /* We use the hamburger button to close now */
+    }
 }
 
 html {
@@ -225,6 +272,8 @@ section {
 
 .first {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 25px;
     padding: 0px 5px;
 }
@@ -232,7 +281,10 @@ section {
 .second .second22 {
     padding-top: 20px;
     display: flex;
-    padding: 20px 200px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    /* Reduced side padding from 200px to ensure it fits */
     gap: 25px;
 }
 
@@ -1030,23 +1082,29 @@ border: 1px solid rgba(50, 39, 39, 0.25); */
     }
 
     #section4 .projectss {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        /* Match Section 5 */
+        gap: 0;
+        /* Let first/second22 handle gap */
     }
 
     #section4 .first,
     #section4 .second .second22 {
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 25px;
         padding: 10px 5px !important;
+        width: 100%;
     }
 
     #section4 .project-card {
-        width: 90vw !important;
+        width: 90% !important;
+        /* Use percentage for fluidity */
         max-width: 450px;
         height: auto !important;
-        aspect-ratio: 450/250;
+        aspect-ratio: 16 / 9;
+        /* More standard aspect ratio */
         margin: 0 auto;
     }
 
