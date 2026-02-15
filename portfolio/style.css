@@ -994,13 +994,17 @@ border: 1px solid rgba(50, 39, 39, 0.25); */
 #section5 .project-card {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(0, 246, 255, 0.2);
+    border: 2px solid rgba(0, 246, 255, 0.4);
+    /* Thicker cyan border */
+    box-shadow: 0 0 15px rgba(0, 246, 255, 0.2);
+    /* Persistent subtle glow */
     animation: float 5s ease-in-out infinite;
 }
 
 #section5 .project-card:hover {
     transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 0 30px rgba(0, 246, 255, 0.6), 0 0 60px rgba(0, 246, 255, 0.4);
+    box-shadow: 0 0 30px rgba(0, 246, 255, 0.8), 0 0 60px rgba(0, 246, 255, 0.5);
+    /* Intense hover glow */
     border-color: rgba(0, 246, 255, 1);
     z-index: 20;
 }
@@ -1008,6 +1012,8 @@ border: 1px solid rgba(50, 39, 39, 0.25); */
 #section5 .project-card .overlay {
     background: rgba(102, 102, 119, 0.8);
     border-radius: 10px;
+    font-family: "Playfair Display", Georgia, serif;
+    /* Match the serif font in the image */
 }
 
 /* Floating Animation */
