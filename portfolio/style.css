@@ -835,7 +835,7 @@ border: 1px solid rgba(50, 39, 39, 0.25); */
 
     /* Increase top padding to prevent collision with fixed hamburger menu */
     section {
-        padding-top: 80px !important;
+        padding: 80px 20px 40px 20px !important;
     }
 
     /* Section 1 spacing + typography */
@@ -963,10 +963,10 @@ border: 1px solid rgba(50, 39, 39, 0.25); */
     }
 
     #section5 .project-card {
-        width: 90vw;
+        width: 100%;
         max-width: 450px;
         height: auto;
-        aspect-ratio: 450/250;
+        aspect-ratio: 16 / 9;
         /* Maintain aspect ratio */
     }
 }
@@ -1122,9 +1122,10 @@ border: 1px solid rgba(50, 39, 39, 0.25); */
     }
 
     #section4 .project-card {
-        width: 95vw !important;
-        max-width: 400px;
-        /* Removed fixed height to let aspect-ratio work */
+        width: 100% !important;
+        max-width: 450px;
+        height: auto !important;
+        aspect-ratio: 16 / 9;
     }
 }
 
