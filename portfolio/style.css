@@ -248,7 +248,7 @@ section {
 
 /* ---- SECTIONS ---- */
 #section2 {
-    background-image: url(./images/20251128_0312_image.png);
+    background-image: url(./images/f33771ef-12e3-4947-91af-f3d397487988.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -256,9 +256,9 @@ section {
 
 }
 
-/* ⭐ FIXED: REMOVE gradient so Vanta background shows */
+/* FIXED: REMOVE gradient so Vanta background shows */
 #section3 {
-    background-image: url(./images/nano_banana_removed.png);
+    background-image: url(./images/b72cecec-d304-4604-bfa3-9ec6186da4af.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
