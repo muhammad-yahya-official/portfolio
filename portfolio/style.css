@@ -248,20 +248,34 @@ section {
 
 /* ---- SECTIONS ---- */
 #section2 {
-    background-image: url(./images/f33771ef-12e3-4947-91af-f3d397487988.jpg);
+    background-image: url(./images/5de9e662-a439-4d8d-90f9-30541910f854.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
+    background-attachment: fixed;
     color: white;
+    position: relative;
+    z-index: 1;
+}
 
+#section2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(10, 10, 10, 0.20);
+    backdrop-filter: blur(8px);
+    z-index: -1;
+    pointer-events: none;
 }
 
 /* FIXED: REMOVE gradient so Vanta background shows */
 #section3 {
-    background-image: url(./images/b72cecec-d304-4604-bfa3-9ec6186da4af.jpg);
+    background-image: url(./images/1d6b63c6-c51c-463d-ae1d-4f953a260041.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     color: white;
+    position: relative;
+    z-index: 1;
 }
 
 #section4 {
@@ -528,6 +542,11 @@ section {
     margin-top: -50px;
 }
 
+.details {
+    max-width: 60%;
+    line-height: 1.6;
+}
+
 .details span {
     font-weight: bold;
     font-family: "Inter", "Poppins", sans-serif;
@@ -634,7 +653,7 @@ border: 1px solid rgba(50, 39, 39, 0.25); */
 .profile-pic img {
     width: 100%;
     height: 100%;
-    object-fit: cover ;
+    object-fit: cover;
     object-position: center;
 }
 
@@ -764,6 +783,10 @@ border: 1px solid rgba(50, 39, 39, 0.25); */
 /* ---------- (1) Tablets + small laptops (max-width: 1024px) ---------- */
 @media (max-width: 1024px) {
 
+    .details {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
 
     .section1-info {
         /* Reset positioning */
